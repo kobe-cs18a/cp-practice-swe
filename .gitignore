@@ -1,7 +1,5 @@
-
-project/metals.sbt
+project/
 /bin/
-project/target/
 target/
 .vscode/
 .metals/
