@@ -1,8 +1,7 @@
-image: openjdk:8
+image:
+  file: .gitpod.Dockerfile
+
 vscode:
   extensions:
     - scala-lang.scala
     - scalameta.metals
-tasks:
-- init: source ./gitpod_init.sh
-- command: source ./gitpod_command.sh
