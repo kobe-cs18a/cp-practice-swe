@@ -15,8 +15,7 @@ class T09 extends FunSuite {
     val as = jp.kobe_u.Ticket.findSolutions4(9,8,8,1,10).map(_.toString).toSet
 
     assert(
-        ts.size == as.size &&
-        ts.forall(t => as.contains(t))
+        ts == as
     )
   }
 

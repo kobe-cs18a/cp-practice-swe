@@ -11,12 +11,11 @@ class T08 extends FunSuite {
 
   test("genTrees4 のテスト") {
 
-    val ts = Ticket.genTrees4(1,2,3,4)
-    val as = jp.kobe_u.Ticket.genTrees4(1,2,3,4)
+    val ts = Ticket.genTrees4(1,2,3,4).map(_.toString).toSet
+    val as = jp.kobe_u.Ticket.genTrees4(1,2,3,4).map(_.toString).toSet
 
     assert(
-        ts.size == as.size &&
-        (0 until ts.size).forall(i => ts(i).value == as(i).value)
+        ts == as
     )
   }
 

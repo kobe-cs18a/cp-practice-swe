@@ -11,12 +11,11 @@ class T07 extends FunSuite {
 
   test("genTrees3 のテスト") {
 
-    val ts = Ticket.genTrees3(1,2,3)
-    val as = jp.kobe_u.Ticket.genTrees3(1,2,3)
+    val ts = Ticket.genTrees3(1,2,3).map(_.toString).toSet
+    val as = jp.kobe_u.Ticket.genTrees3(1,2,3).map(_.toString).toSet
 
     assert(
-        ts.size == as.size &&
-        (0 until ts.size).forall(i => ts(i).value == as(i).value)
+        ts == as
     )
   }
 
