@@ -2,12 +2,12 @@ package lecture.ticket
 
 abstract class Tree {
   def value: Double
-  def valueEquals(x: Double): Boolean = ???
+  // def valueEquals(x: Double): Boolean = ??? // 適宜コメントを外す
 }
 
 case class Leaf(n: Int) extends Tree {
   def value = ???
-  override def toString = ???
+  // override def toString = ??? // 適宜コメントを外す
 }
 
 case class Node(op: String, left: Tree, right: Tree) extends Tree {
@@ -18,7 +18,7 @@ case class Node(op: String, left: Tree, right: Tree) extends Tree {
     case "/" => ???
   }
 
-  override def toString = ???
+  // override def toString = ??? // 適宜コメントを外す
 
 }
 
